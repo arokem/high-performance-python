@@ -6,10 +6,8 @@ questions:
 - "Can we calculate things in parallel?"
 objectives:
 - "Use Dask to parallelize Python computations"
-- "Use Dask arrays to analyze data that naturally comes in arrays"
 keypoints:
 - "If computations lend themselves to parallelization, they can be sped up substantially"
-- "Dask arrays can speed up things even more, for array data"
 - "Dask provides a whole universe of tools for parallelization"
 ---
 
@@ -95,4 +93,10 @@ Once this graph is computed, Dask can see that the two variables do not
 depend on each other, and they can be executed in parallel. So, a
 computation that would take 2 seconds serially is immediately sped up
 n-fold (with n being the number of independent variables, here 2).
+
+
+Dask has implementations of several commonly-used pythonic data-structures. In
+particular, it implements a data structure that resembles the Numpy Array object
+and another data structure that resembles the Pandas DataFrame. This lets us do
+slightly more interesting things and leverage our knowledge of these tools.
 

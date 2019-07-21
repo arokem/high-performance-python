@@ -7,16 +7,10 @@ questions:
 objectives:
 - "Use Dask DataFrames to analyze data from CSV files"
 keypoints:
-- "Dask arrays can speed up things even more, for array data"
-- "Dask provides a whole universe of tools for parallelization"
+- "Dask DataFrames can speed up things even more, for tabular data"
 ---
 
-
-Dask has implementations of several commonly-used pythonic data-structures. In
-particular, it implements a data structure that resembles the Numpy Array object
-and another data structure that resembles the Pandas DataFrame. This lets us do
-slightly more interesting things and leverage our knowledge of these tools. For
-example, let's say that we'd like to analyze a large data that resides in a
+For example, let's say that we'd like to analyze a large data that resides in a
 collection of CSV files.
 
 
